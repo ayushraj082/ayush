@@ -1,0 +1,14 @@
+function findMax(numbers) {
+  let max = numbers[0]; // Assume the first number is the maximum
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i]; // Update max if a larger number is found
+    }
+  }
+
+  return max;
+}
+const numbers = [5, 8, 2, 10, 1];
+const maximum = findMax(numbers);
+console.log(maximum);
